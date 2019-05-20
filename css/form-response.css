@@ -1,0 +1,50 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/breen-wallpaper.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.background-shadow {
+  padding: 8px;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: calc(100% - 16px);
+  height: calc(100% - 16px);
+  display: flex;
+  color: white;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Roboto;    
+}
+
+img {
+  width: 300px;
+}
+
+@media only screen and (max-width: 768px) {
+  img {
+    width: 80%;
+  }
+}
+
+.we-will-contact {
+  margin-top: 16px;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+}
+ 
+a {
+  position: absolute;
+  bottom: 4px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}

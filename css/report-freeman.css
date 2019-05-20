@@ -1,0 +1,117 @@
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/freeman-wallpaper.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #171717;
+  font-family: Roboto;
+}
+
+.body-shadow {
+  width: calc(100% - 16px);
+  height: calc(100% - 16px);
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.body-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.body-content img {
+  width: 400px;
+}
+
+h2 {
+  color: white;
+}
+
+@media only screen and (min-width: 728px) {
+  h2 {
+  	font-size: 40px;
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+}
+
+@media only screen and (max-width: 728px) {
+  .body-shadow {
+  	height: unset;
+  }	
+
+  .body-content {
+  	flex-direction: column;
+  }
+
+  .body-content img {
+    width: 100%;
+  }
+
+  form {
+    width: 90%;
+  }
+}
+
+input[type="text"], input[type="submit"], textarea {
+  width: 100%;
+  height: 40px;
+  border-radius: 20px;
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-family: Roboto;
+  padding-left: 8px;
+  border: 0;
+}
+
+textarea {
+  height: 200px;
+  padding-top: 8px;
+}
+
+input[type="submit"] {
+  background-color: #ff5722;
+  color: white;
+  transition: background-color 1s;
+}
+
+input[type="submit"]:hover {
+  background-color: #bb3f18;
+}
+
+input[type="submit"]:focus {
+  background-color: #bb3f18; 
+}
+
+*:focus {
+  outline: none;
+}
+
+.loading {
+  color: white;
+  font-weight: bold;
+}
+
+.sended {
+  color: #8BC34A;
+  font-weight: bold;
+}
